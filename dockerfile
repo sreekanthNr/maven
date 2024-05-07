@@ -1,8 +1,8 @@
-FROM tomcat:8.0-alpine
+FROM tomcat:8.0-jre8 
 
 LABEL maintainer=”deepak@softwareyoga.com”
 
-ADD /webapp/target/webapp.war /usr/local/tomcat/webapps/
+ADD /webapp/target/webapp.war $CATALINA_HOME/webapps
 
 EXPOSE 8080
 
