@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: java-web-app-docker:mineapp
+        image: sreekanth143/java-web-app-docker:mineapp
         ports:
         - containerPort: 8080
 ---
