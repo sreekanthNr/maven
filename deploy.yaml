@@ -15,6 +15,7 @@ spec:
       containers:
       - name: web
         image: sreekanth143/java-web-app-docker:mineapp
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
 ---
