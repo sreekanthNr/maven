@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: ava-web-app-docker:mineapp
+        image: java-web-app-docker:mineapp
         ports:
         - containerPort: 8080
 ---
