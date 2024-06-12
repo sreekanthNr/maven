@@ -1,3 +1,9 @@
-FROM tomcat:8
-LABEL app=my-app
-COPY target/webapp.war /usr/local/tomcat/webapps/webapp.war
+FROM tomcat:8.0-alpine
+
+LABEL maintainer=”sree”
+
+ADD /webapp/target/webapp.war /usr/local/tomcat/webapps/
+
+EXPOSE 8080
+
+CMD [“catalina.sh”, “run”]
