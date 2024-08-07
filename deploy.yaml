@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: boardgame
-          image: sreekanth143/java-web-app-docker:nn # Image that will be used to containers in the cluster
+          image: sreekanth143/java-web-app-docker:app22 # Image that will be used to containers in the cluster
           imagePullPolicy: Always
           ports:
             - containerPort: 8080 # The port that the container is running on in the cluster
